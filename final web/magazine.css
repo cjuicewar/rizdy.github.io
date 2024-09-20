@@ -1,0 +1,62 @@
+/* Basic styles for the navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black; /* Set navbar background color to black */
+    overflow: hidden;
+    text-align: center; /* Center align all links */
+}
+
+.navbar a {
+    display: inline-block; /* Inline-block for centering the links */
+    color: white; /* Font color set to white */
+    text-align: left;
+    padding: 20px 20px; /* Adjust padding as per your requirement */
+    text-decoration: none;
+    font-family: 'Aptos', Arial, sans-serif; /* Font changed to Aptos, Arial, sans-serif */
+    font-size: 12px; /* Font size set to 12px */
+}
+
+.navbar a:hover {
+    background-color: #000000; /* Light grey background on hover */
+    color: rgb(255, 255, 255);
+}
+
+/* Image Container */
+.portrait-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Add space between images */
+    margin-top: 60px; /* Add space from the navbar */
+}
+
+/* Adding animation to images */
+.portrait-icon {
+    height: 750px; /* Set height for images */
+    width: auto; /* Maintain aspect ratio */
+    max-height: 750px; /* Prevent the image from exceeding this height */
+    max-width: 100%; /* Ensure image width doesn't exceed container width */
+    object-fit: contain; /* Ensures the image fits within the container without stretching */
+    opacity: 0; /* Start with hidden images */
+    transform: translateY(20px); /* Start with images below their final position */
+    animation: floatIn 5s forwards; /* Apply the animation */
+    transition: transform 5s ease-in-out; /* Smooth transition for floating effect */
+}
+
+/* Floating animation */
+@keyframes floatIn {
+    to {
+        opacity: 1; /* Fade in the image */
+        transform: translateY(0); /* Move image to its final position */
+    }
+}
+
+.portrait-icon:hover {
+    transform: translateY(-10px); /* Moves image up by 10px when hovered */
+}

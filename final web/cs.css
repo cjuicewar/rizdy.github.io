@@ -1,0 +1,217 @@
+/* Basic styles for the navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black; /* Set navbar background color to black */
+    overflow: hidden;
+    text-align: center; /* Center align all links */
+    margin-bottom: 50px; /* Space between the header and the container */
+}
+
+.navbar a {
+    display: inline-block; /* Inline-block for centering the links */
+    color: white; /* Font color set to white */
+    text-align: left;
+    padding: 20px 20px; /* Adjust padding as per your requirement */
+    text-decoration: none;
+    font-family: 'Aptos', Arial, sans-serif; /* Font changed to Aptos, Arial, sans-serif */
+    font-size: 12px; /* Font size set to 12px */
+}
+
+.navbar a:hover {
+    background-color: #000000; /* Light grey background on hover */
+    color: rgb(255, 255, 255);
+}
+
+/* General content container styles */
+.content-container {
+    display: none; /* Hide all containers initially */
+    padding: 20px;
+    margin: 20px auto; /* Center align with margins on left and right */
+    border: 1px solid black; /* Thin black outline */
+    border-radius: 5px;
+    max-width: 80%; /* Adjust width as needed */
+    background-color: #f9f9f9; /* Optional: background color */
+    text-align: center; /* Center text inside the container */
+}
+
+/* Center the caption and adjust text styles */
+.content-caption {
+    text-align: center; /* Center the caption */
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    font-size: 25px;
+    font-weight: bold; /* Make caption bold */
+    margin: 20px 0; /* Space above and below caption */
+}
+
+/* Style for the content text */
+.content-text {
+    text-align: center; /* Center the paragraph text */
+    font-family: 'Aptos Display', Arial, sans-serif;
+    font-size: 16px; /* Font size */
+    margin: 20px 0; /* Space above and below each paragraph */
+    line-height: 1.5; /* Improve readability */
+}
+
+#content-container .history-image {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Dropdown styles */
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: black; /* Background color for dropdown button */
+    color: white; /* Font color for dropdown button */
+    padding: 20px;
+    font-family: 'Aptos', Arial, sans-serif;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown content by default */
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555; /* Darker grey on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+/* CS Events container */
+#cs-events-container {
+    display: none; /* Initially hidden, will be shown via JavaScript or on interaction */
+    padding: 20px;
+    margin: 35px auto; /* Center align with margins on the left and right */
+    border: 1px solid black; /* Thin black outline for container */
+    border-radius: 5px;
+    max-width: 80%; /* Set width to 80% of the viewport */
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center; /* Center-align content inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for subtle depth */
+    position: relative; /* Required for the floating effect */
+    overflow: hidden; /* Ensure floating elements don’t spill outside the container */
+}
+
+/* Caption for CS Events */
+#cs-events-container .content-caption {
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    font-size: 25px; /* Caption font size */
+    font-weight: bold; /* Bold caption */
+    margin: 20px 0; /* Space above and below caption */
+    text-align: center; /* Center the CS Events caption */
+}
+
+/* Styling for the event layers */
+#cs-events-container .layer {
+    display: flex; /* Flexbox layout for the layer */
+    justify-content: center; /* Center all images in the layer */
+    margin-bottom: 15px; /* Space between layers */
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Start off-screen */
+    animation: floatInContainer 8s ease-in-out forwards; /* Apply the animation */
+}
+
+/* Icons within each layer */
+#cs-events-container .layer-icon {
+    width: 400px; /* Adjusted width for icons */
+    height: 250px; /* Adjusted height for icons */
+    margin: 0 10px; /* Space between each icon */
+    border: 1px solid black; /* Thinner black border around icons */
+}
+
+/* Keyframes for floating animation within the container */
+@keyframes floatInContainer {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Start off-screen */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+/* Separate styles for the CS Professors container */
+#cs-professors-container {
+    display: none; /* Hide all containers initially */
+    padding: 20px;
+    margin: 20px auto; /* Center align with margins on left and right */
+    border: 1px solid black; /* Thin black outline */
+    border-radius: 5px;
+    max-width: 80%; /* Adjust width as needed */
+    background-color: #f9f9f9; /* Optional: background color */
+    text-align: center; /* Center text inside the container */
+}
+
+/* Caption for CS Professors */
+#cs-professors-container .content-caption {
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 0;
+    text-align: center;
+    color: #333;
+}
+
+/* Styling for the professor layers */
+#cs-professors-container .layer {
+    display: flex;
+    justify-content: center; /* Center all items horizontally */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Wrap the items if there are many */
+    margin-bottom: 20px;
+}
+
+/* Styling for each professor's image and text container */
+#cs-professors-container .professor-item {
+    display: flex; /* Change to flex for horizontal alignment */
+    align-items: center; /* Center both image and text vertically */
+    margin: 0 15px; /* Add horizontal spacing between items */
+}
+
+/* Icons within each professor item */
+#cs-professors-container .layer-icon {
+    width: 150px; /* Set the same width for all images */
+    height: 150px; /* Set the same height for all images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 2px solid #333; 
+    margin-right: 10px; /* Space between the image and text */
+}
+
+/* Name (caption) of each professor */
+#cs-professors-container .layer-caption {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: left; /* Align the caption text to the left */
+}
+
+
+
+

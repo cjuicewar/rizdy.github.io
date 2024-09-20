@@ -1,0 +1,165 @@
+/* Basic styles for the navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black; /* Set navbar background color to black */
+    overflow: hidden;
+    text-align: center; /* Center align all links */
+    margin-bottom: 10px; /* Space between the header and the container */
+}
+
+.navbar a {
+    display: inline-block; /* Inline-block for centering the links */
+    color: white; /* Font color set to white */
+    text-align: left;
+    padding: 20px 20px; /* Adjust padding as per your requirement */
+    text-decoration: none;
+    font-family: 'Aptos', Arial, sans-serif; /* Font changed to Aptos, Arial, sans-serif */
+    font-size: 12px; /* Font size set to 12px */
+}
+
+.navbar a:hover {
+    background-color: #000000; /* Light grey background on hover */
+    color: rgb(255, 255, 255);
+}
+
+/* Style for images inside containers */
+.content-image {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Center the heading and adjust text styles */
+.content-container h1 {
+    text-align: center; /* Center the heading */
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    font-size: 30px; /* Increase font size */
+}
+
+.content-container p {
+    text-align: justify; /* Justify the paragraph text */
+    text-indent: 50px; /* Indent the first line of the paragraph */
+    font-family: Aptos, Arial, sans-serif;
+    font-size: 16px; /* Adjust font size if needed */
+}
+
+/* Container for the Resume Image */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* Space above the image */
+}
+
+#resume-icon {
+    display: none;
+    width: 650px; /* Adjust the width as needed */
+    height: 900px; /* Adjust the height as needed */
+}
+
+/* Dropdown styles */
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: black; /* Background color for dropdown button */
+    color: white; /* Font color for dropdown button */
+    padding: 20px;
+    font-family: 'Aptos', Arial, sans-serif;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown content by default */
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555; /* Darker grey on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+/* Container for About Company content (hidden by default) */
+#about-company-container {
+    display: none; /* Hidden by default */
+    text-align: center; /* Center-align content */
+    border: 1px solid black; /* Thin black outline */
+    border-radius: 5px; /* Rounded corners */
+    padding: 30px; /* Increase padding inside the container */
+    margin: 20px auto; /* Center the container and add margin */
+    width: 90%; /* Expand width to 90% */
+    max-width: 1000px; /* Increase maximum width */
+}
+
+/* Additional styles for the logo inside the container */
+#about-company-container img.logo-icon {
+    display: block;
+    margin: 0 auto 30px; /* Center the logo and add more space below it */
+    width: 150px; /* Adjust the width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Layer styles */
+.layer {
+    margin-bottom: 30px; /* Space between layers */
+}
+
+.layer h3 {
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    font-size: 20px;
+}
+
+.layer p {
+    text-align: justify; /* Justify the paragraph text */
+    text-indent: 50px; /* Indent the first line of the paragraph */
+    font-family: Aptos, Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Content container styles */
+.content-container {
+    display: none; /* Hide all containers initially */
+    padding: 30px; /* Increase padding inside the container */
+    margin: 20px auto; /* Expand margin to provide more space */
+    border: 1px solid black; /* Thin black outline */
+    border-radius: 5px;
+    width: 100%; /* Expand width to 90% */
+    max-width: 1200px; /* Increase maximum width */
+}
+
+/* Center the heading and adjust text styles */
+.content-container h1 {
+    text-align: center; /* Center the heading */
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    font-size: 30px; /* Increase font size */
+}
+
+.content-container p {
+    text-align: justify; /* Justify the paragraph text */
+    text-indent: 50px; /* Indent the first line of the paragraph */
+    font-family: Aptos, Arial, sans-serif;
+    font-size: 16px; /* Adjust font size if needed */
+}

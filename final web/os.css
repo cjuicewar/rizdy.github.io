@@ -1,0 +1,27 @@
+/* Basic styles for the navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black; /* Set navbar background color to black */
+    overflow: hidden;
+    text-align: center; /* Center align all links */
+}
+
+.navbar a {
+    display: inline-block; /* Inline-block for centering the links */
+    color: white; /* Font color set to white */
+    text-align: left;
+    padding: 20px 20px; /* Adjust padding as per your requirement */
+    text-decoration: none;
+    font-family: 'Aptos', Arial, sans-serif; /* Font changed to Aptos, Arial, sans-serif */
+    font-size: 12px; /* Font size set to 12px */
+}
+
+.navbar a:hover {
+    background-color: #000000; /* Light grey background on hover */
+    color: rgb(255, 255, 255);
+}

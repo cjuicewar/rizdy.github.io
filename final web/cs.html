@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Lust</title>
+    <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+
+<div class="navbar">
+    <!-- Link each button to its respective HTML file -->
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="business.html">Business</a>
+    <a href="magazine.html">Magazine</a>
+    <a href="about.html">About Me</a>
+    <a href="um.html">UM</a>
+    <div class="dropdown">
+        <a href="#" class="dropbtn">CS</a>
+        <div class="dropdown-content">
+            <a href="#" onclick="showContent('content-container')">History</a>
+            <a href="#" onclick="showContent('mission-container')">Mission, Vision, and Objectives</a>
+            <a href="#" onclick="showContent('cs-professors-container')">CS Professors</a>
+            <a href="#" onclick="showContent('cs-events-container')">CS Events</a>
+        </div>        
+    </div>
+    <a href="contacts.html">Contacts</a>
+    <a href="os.html">OS</a>
+</div>
+
+<!-- Hidden container for History -->
+<div id="content-container" class="content-container">
+    <img src="com scie.jpg" alt="Description" class="history-image">
+    <br>
+    <div class="history-caption content-caption">COMPUTER SCIENCE HISTORY</div>
+    <div class="history-text content-text">Welcome to the College of Computer Science and Information Technology of The University of Manila. We’re committed to advancing the state of the art in Computer Science and Information Technology, and to providing a challenging and exciting education for our students. Faculty members maintain active programs of research and publication in computer vision, programming languages, machine learning, databases, modeling and simulation, and the theory of computation. We offer academic programs leading to the degree of Bachelor of Science in Computer Science, and Associate in Computer Technology. Our students have the opportunity to carry out independent study and to collaborate with faculty on research projects. General Objectives:</div>
+    <div class="history-text content-text">The University of Manila College of Computer Science / Information Technology aims to produce technological and scientifically empowered professionals, informational technology / computer science experts whose breadth and depth of orientation, knowledge and training, are within global standards, who shall be committed to share their expertise with the various sectors of the academic community and the community at large, ever motivated to share their concepts, their technological skills, their persons to everyone embedded in the UM trilogy of ideals: Love of Country (Patria), Love of Science (Scientia), and Love of Virtue (Virtus).</div>
+    <div class="history-text content-text">Specific Objectives: To equip students with the skills and competencies in information communications technology, its operation, language and design. To empower would-be information technology / computer science professionals with the latest trends, techniques and developments in the information communications technology to enable them to respond to the needs of society. To provide adequate instruction, training, supplemental lectures, seminar workshops, to give office workers and practitioners within the service areas of UM proper orientation on the use of information technology in their various organizational operations. To prepare would-be information technology / computer science graduates with a solid foundation on the various languages, programs and systems to enable them to perform with confidence the varied tasks that may be expected of them the global organizations of the corporate world.</div>
+    <div class="history-text content-text">DR. RICHARD D. DE LEON Dean, College of Computer Science & Engineering PROF. STANLEY P. VERDE Assistant Dean, College of Computer Science & Information Technology. Under the vigilant stewardship of Dr. Virgilio de los Santos, the University has been placed to a higher level of credit and standard. In line with the thrusts of the government and to keep abreast with the demands of the modern times, on February 16, 1994, the University offered four-year courses in Computer Science. To show further that the University of Manila has come of age and in response to the call of the 90’s, on February 21, 1994, it offered new courses in the following programs: Doctor of Education, Doctor of Public Administration, and Master of Business Administration.</div>
+    <div class="history-text content-text">These programs are designed to provide administrators, businessmen, analysts, researchers, and educators with the theoretical background, values, competencies, and skills for them to be able to participate and contribute to the growth and development of a better and a more humane society.</div>
+</div>
+
+
+<!-- Hidden container for Mission -->
+<div id="mission-container" class="content-container">
+    <div class="content-caption">MISSION</div>
+    <div class="content-text">BUILD A STRONG PROVIDE QUALITY UNDERGRADUATE AND GRADUATE EDUCATION IN BOTH THE THEORETICAL AND APPLIED FOUNDATIONS OF COMPUTER SCIENCE AND TRAIN STUDENTS TO EFFECTIVELY APPLY THIS EDUCATION TO SOLVE REAL-WORLD PROBLEMS THUS AMPLIFYING THEIR POTENTIAL FOR LIFELONG HIGH-QUALITY CAREERS AND GIVE THEM A COMPETITIVE ADVANTAGE IN THE EVER-CHANGING AND CHALLENGING GLOBAL WORK ENVIRONMENT OF THE 21ST CENTURY.</div>
+    <div class="content-caption">VISION</div>
+    <div class="content-text">BUILD A STRONG RESEARCH AND TEACHING ENVIRONMENT THAT RESPONDS SWIFTLY TO THE CHALLENGES OF THE 21ST CENTURY.</div>
+    <div class="content-caption">OBJECTIVES</div>
+    <div class="content-text">TO EQUIP STUDENTS WITH THE SKILLS AND COMPETENCES IN INFORMATION COMMUNICATIONS TECHNOLOGY, ITS OPERATION LANGUAGE AND DESIGN.</div>
+    <div class="content-text">TO EMPOWER WOULD-BE INFORMATION TECHNOLOGY COMPUTER SCIENCE PROFESSIONALS WITH THE LATES TRENDS, TECHNIQUES, AND DEVELOPMENTS IN THE INFORMATION COMMUNICATIONS TECHNOLOGY TO ENABLE THEM TO RESPOND TO THE NEEDS OF SOCIETY.</div>
+    <div class="content-text">TO PROVIDE ADEQUATE INSTRUCTION, TRAINING, SUPPLEMENTAL, LECTURES, SEMINAR WORKSHOPS TO GIVE OFFICE WORKERS AND PRACTITIONERS WITHIN THE SERVICE AREAS OF UM PROPER ORIENTATION ON THE USE OF INFORMATION TECHNOLOGY IN THEIR VARIOUS ORGANIZATIONAL OPERATIONS.</div>
+    <div class="content-text">TO PREPARE WOULD-BE INFORMATION TECHNOLOGY/COMPUTER SCIENCE GRADUATES WITH A SOLID FOUNDATION ON THE VARIOUS LANGUAGES, PROGRAMS AND SYSTEMS TO ENABLE THEM TO PERFORM WITH CONFIDENCE THE VARIED TASKS THAT MAY BE EXPECTED OF THEM THE GLOBAL ORGANIZATIONS OF THE CORPORATE WORLD.</div>
+</div>
+
+<!-- Hidden container for CS Professors -->
+<div id="cs-professors-container" class="content-container">
+    <!-- Layer 1 -->
+    <div class="layer">
+        <img src="dean" alt="Professor 1" class="layer-icon">
+        <div class="layer-info professor-text">
+            <div class="layer-caption">DR. RICHARD D. DE LEON</div>
+            <div class="layer-description">Dean, College of Computer Science & Engineering</div>
+        </div>
+    </div>
+    <!-- Repeat for other layers -->
+    <div class="layer">
+        <img src="mb.jpg" alt="Professor 1" class="layer-icon">
+        <div class="layer-info professor-text">
+            <div class="layer-caption">PROF. MARJORIE BORCES</div>
+            <div class="layer-description">Computer Science Adviser & Professor</div>
+        </div>
+    </div>
+    
+    <div class="layer">
+        <img src="best prof.jpg" alt="Professor 1" class="layer-icon">
+        <div class="layer-info professor-text">
+            <div class="layer-caption">PROF. ROGELIO PLAZA</div>
+            <div class="layer-description">Computer Science Professor</div>
+        </div>
+    </div>
+    <div class="layer">
+        <img src="sb.png" alt="Professor 1" class="layer-icon">
+        <div class="layer-info professor-text">
+            <div class="layer-caption">PROF. JOSELITO BORCES</div>
+            <div class="layer-description">Computer Science Professor</div>
+        </div>
+    </div>
+    <div class="layer">
+        <img src="fav prof.png" alt="Professor 1" class="layer-icon">
+        <div class="layer-info professor-text">
+            <div class="layer-caption">PROF. ERVIN RAMOS</div>
+            <div class="layer-description">Computer Science Professor</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Hidden container for CS Events -->
+<div id="cs-events-container" class="content-container">
+    <!-- Caption for CS Events -->
+    <div class="content-caption">VISUALS FROM OUR CS EVENTS</div>
+    
+    <!-- Layer 1 -->
+    <div class="layer">
+        <img src="vball.jpg" alt="Event 1" class="layer-icon">
+        <img src="kath.jpg" alt="Event 2" class="layer-icon">
+        <img src="the 4.jpg" alt="Event 3" class="layer-icon">
+    </div>
+    
+    <!-- Layer 2 -->
+    <div class="layer">
+        <img src="got talent.jpg" alt="Event 4" class="layer-icon">
+        <img src="intrams.jpg" alt="Event 5" class="layer-icon">
+        <img src="ap.jpg" alt="Event 6" class="layer-icon">
+    </div>
+    
+    <!-- Layer 3 -->
+    <div class="layer">
+        <img src="tin.jpg" alt="Event 7" class="layer-icon">
+        <img src="VE.jpg" alt="Event 8" class="layer-icon">
+        <img src="girls.jpg" alt="Event 9" class="layer-icon">
+    </div>
+</div>
+
+
+
+<script src="cs.js" defer></script>
+
+</body>
+</html>

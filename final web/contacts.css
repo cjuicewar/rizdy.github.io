@@ -1,0 +1,110 @@
+/* Basic styles for the body and html */
+html, body {
+    height: 100%; /* Full height for html and body to ensure footer positioning */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Allow footer to be pushed down */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: black; /* Set navbar background color to black */
+    overflow: hidden;
+    text-align: center; /* Center align all links */
+}
+
+.navbar a {
+    display: inline-block; /* Inline-block for centering the links */
+    color: white; /* Font color set to white */
+    text-align: left;
+    padding: 20px 20px; /* Adjust padding as per your requirement */
+    text-decoration: none;
+    font-family: 'Aptos', Arial, sans-serif; /* Font changed to Aptos, Arial, sans-serif */
+    font-size: 12px; /* Font size set to 12px */
+}
+
+.navbar a:hover {
+    background-color: #000000; /* Dark grey background on hover */
+    color: rgb(255, 255, 255);
+}
+
+/* Content styles */
+.content {
+    flex: 1; /* Allow content to grow and fill the available space */
+    margin-top: 50px; /* Increase margin to push content down from the header */
+    text-align: center;
+}
+
+/* Layer Styles */
+.info-layers {
+    margin: 10px auto; /* Reduce the margin around the layers */
+    max-width: 800px; /* Center content with max width */
+    display: flex;
+    flex-direction: column; /* Ensure layers stack vertically */
+    align-items: center; /* Center layers horizontally */
+}
+
+/* Common Layer Styles */
+.layer-1, .layer-2, .layer-3, .layer-4 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the text within the layers */
+    align-items: center; /* Align content horizontally */
+    width: 100%;
+    font-family: 'Franklin Gothic Heavy', sans-serif; /* Font for layers */
+    text-align: center; /* Center the text */
+    line-height: 30px; /* Match the line-height with the icon size */
+}
+
+.layer-1 .icon, .layer-2 .icon, .layer-3 .icon, .layer-4 .icon {
+    max-width: 30px; /* Set icon size */
+    height: auto;
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with the middle of the text */
+}
+
+/* Google Map Container Styles */
+.map-container {
+    margin: 30px auto; /* Space around the map */
+    max-width: 1000px; /* Ensure map width fits within the content */
+    width: 100%; /* Make map full width of its container */
+    height: 400px; /* Adjust height as needed */
+}
+
+.map-container iframe {
+    width: 100%; /* Make the iframe full width */
+    height: 100%; /* Make the iframe full height */
+    border: 0; /* Remove default iframe border */
+}
+
+/* Icon Container Styles */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Space between the map and icons */
+    margin-bottom: 50px; /* Space between the icons and footer */
+}
+
+.icon-container img {
+    max-width: 25px; /* Set icon size */
+    margin: 0 10px; /* Space between icons */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(0, 0, 0); /* Same color as header */
+    color: rgb(255, 255, 255); /* Same text color as header */
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    font-family: Aptos, Arial, sans-serif; /* Same font as header */
+    position: relative;
+    bottom: 0;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Lust</title>
+    <link rel="stylesheet" href="business.css">
+</head>
+<body>
+
+<div class="navbar">
+    <!-- Link each button to its respective HTML file -->
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Business</a>
+        <div class="dropdown-content">
+            <a href="#" id="about-company-link">About Company</a>
+            <a href="#" id="resume-link">Resume</a>
+        </div>
+    </div>
+    <a href="magazine.html">Magazine</a>
+    <a href="about.html">About Me</a>
+    <a href="um.html">UM</a>
+    <a href="cs.html">CS</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="os.html">OS</a>
+</div>
+
+<!-- Container for the Resume Image -->
+<div class="centered">
+    <img id="resume-icon" src="fnl resume.png" alt="Resume Icon" style="display: none;">
+</div>
+
+<!-- Container for About Company content (hidden by default) -->
+<div id="about-company-container" class="about-company" style="display: none;">
+    <img src="logo.png" alt="Company Logo" class="logo-icon"> <!-- Add the logo here -->
+
+    <div class="layer">
+        <h3>LIQUID LUST HISTORY</h3>
+        <p>Liquid Lust Bar was born out of a deep love for good times, great drinks, and unforgettable experiences. Founded by Alex Cruz, Carl James, and Riz Dy in 2020, it started as a small vision: to create a space where the energy of the night comes alive with every sip. Located in Tomas Morato, Quezon City, Liquid Lust quickly earned its reputation as a haven for cocktail enthusiasts and social butterflies alike.</p>
+        <p>The name Liquid Lust represents the bar’s philosophy—an irresistible attraction to finely crafted beverages and the art of mixing. What started as a humble bar has since become an iconic spot, known for its distinct atmosphere and signature cocktails that draw inspiration from global flavors and local trends. Classics are elevated, and new concoctions are created with passion and precision, making each visit an adventure for the palate.</p>
+        <p>As the years went by, Liquid Lust became more than just a bar. It evolved into a community hub—a place where locals and visitors gather to share stories, music, and moments that last. The bar’s atmosphere, with its dim lighting, sleek interiors, and sultry vibe, adds to the allure that keeps patrons coming back. Special events, live music, and themed nights are staples that make every experience at Liquid Lust unique.</p>
+        <p>With a blend of creativity, style, and a thirst for something different, Liquid Lust Bar stands as a testament to Riz Dy's unwavering passion for the craft of mixology and the art of hospitality. And as the story continues, Liquid Lust remains dedicated to being more than a bar—it's a destination where every visit is a new story waiting to be written.</p>
+    </div>
+    <div class="layer">
+        <h3>MISSION</h3>
+        <p>At Liquid Lust Bar, our mission is to ignite passion and creativity through uniquely crafted drinks and an electrifying ambiance. We aim to provide an extraordinary nightlife experience where every visit excites the senses, fosters connection, and leaves a lasting impression.</p>
+    </div>
+    <div class="layer">
+        <h3>VISION</h3>
+        <p>Our vision is to become the leading nightlife destination, known for innovation in mixology, unforgettable atmosphere, and exceptional service. We aspire to set the standard for bars in our region, creating a place where memories are made, and every night is one to remember.</p>
+    </div>
+</div>
+
+<!-- Script to show the image or content when respective links are clicked -->
+<script>
+    document.getElementById('resume-link').addEventListener('click', function(event) {
+        event.preventDefault();  // Prevent default link behavior
+        document.getElementById('resume-icon').style.display = 'block';  // Show the resume image
+        document.getElementById('about-company-container').style.display = 'none';  // Hide the company content
+    });
+
+    document.getElementById('about-company-link').addEventListener('click', function(event) {
+        event.preventDefault();  // Prevent default link behavior
+        document.getElementById('about-company-container').style.display = 'block';  // Show the About Company content
+        document.getElementById('resume-icon').style.display = 'none';  // Hide the resume image
+    });
+</script>
+
+</body>
+</html>

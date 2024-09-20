@@ -1,0 +1,74 @@
+/* Basic styles for the navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black; /* Set navbar background color to black */
+    overflow: hidden;
+    text-align: center; /* Center align all links */
+}
+
+.navbar a {
+    display: inline-block; /* Inline-block for centering the links */
+    color: white; /* Font color set to white */
+    text-align: left;
+    padding: 20px 20px; /* Adjust padding as per your requirement */
+    text-decoration: none;
+    font-family: 'Aptos', Arial, sans-serif; /* Font changed to Aptos, Arial, sans-serif */
+    font-size: 12px; /* Font size set to 12px */
+}
+
+.navbar a:hover {
+    background-color: #000000; /* Light grey background on hover */
+    color: rgb(255, 255, 255);
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    height: calc(100vh - 50px); /* Adjust for header height */
+}
+
+.text-container {
+    flex: 1; /* Takes up half of the space */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-image {
+    flex: 4; /* Takes up half of the space */
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    margin-left: 100px; /* Adjust this value to shift the image right */
+}
+
+/* Adjusted Margins and Font */
+.welcome-text {
+    font-size: 40px;
+    color: #000;
+    margin-left: 20px; /* Adjusted left margin */
+    margin-bottom: 10px; /* Margin between text lines */
+    font-family: 'Franklin Gothic Heavy', sans-serif; /* Font for the first layer */
+}
+
+.liquid-lust {
+    font-size: 100px;
+    color: #000;
+    margin-left: 20px; /* Adjusted left margin */
+    margin-bottom: 10px; /* Margin between text lines */
+    font-family: 'Franklin Gothic Heavy', cursive; /* Font for the second layer */
+}
+
+.footer-text {
+    font-size: 20px;
+    color: #000000;
+    margin-left: 20px; /* Adjusted left margin */
+    font-family: Aptos, Arial, sans-serif;
+}
